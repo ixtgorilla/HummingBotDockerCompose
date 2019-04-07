@@ -1,0 +1,9 @@
+version: '2'
+services:
+  hummingbot:
+    image: coinalpha/hummingbot:latest
+    container_name: hummingbot
+    working_dir: /
+    volumes:
+      - ./conf:/conf
+      - ./logs:/logs
